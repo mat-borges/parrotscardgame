@@ -1,0 +1,7 @@
+@media (max-width: 614px) {
+	.page-header {
+		width: 90vw;
+		font-size: 36px;
+		line-height: 42.2px;
+	}
+}
