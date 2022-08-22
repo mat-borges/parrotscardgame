@@ -4,6 +4,19 @@ body {
 	box-sizing: border-box;
 }
 
+.big-box {
+	width: 100vw;
+	height: 100vh;
+	filter: opacity(0.5);
+	position: fixed;
+}
+
+.pause-box {
+	background-color: transparent;
+	filter: opacity(0);
+	z-index: 5;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;
@@ -20,11 +33,20 @@ body {
 	text-align: center;
 }
 
+.clock-timer {
+	color: rgb(117, 183, 158);
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+	top: 130px;
+	right: 2vw;
+	z-index: -1;
+}
+
 .game {
-	background-color: green;
+	background-color: transparent;
 	margin: 0 auto;
 	width: 90vw;
-	height: fit-content;
 	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
@@ -38,7 +60,7 @@ body {
 	height: 146px;
 	border-radius: 8px;
 	perspective: 1000px;
-	margin: 35px 35px 0 0;
+	margin: 35px 18px 0 18px;
 }
 
 .card-inner {
